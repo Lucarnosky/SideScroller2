@@ -74,8 +74,8 @@ public class Handler {
 			GameObj gameObj = gameObjects.get(i);
 			//Controllo se devo rimuovere l'entità
 			if(gameObj.remove){
+				System.out.println("GameObject: "+gameObj.getName());
 				gameObjects.remove(i);
-				global.allEntities.remove(i);
 				continue;
 			}
 			gameObj.active = isInsideViewPort(gameObj);
@@ -83,6 +83,7 @@ public class Handler {
 				gameObj.update();
 			}
 		}
+		global.allEntities = gameObjects;
 	}
 	
 	public void render(Graphics2D g){

@@ -157,9 +157,9 @@ public class Player extends GameObj{
 				hsp = 0;
 				break;
 			case "Enemy":
+				System.out.println("CIAO");
 				remove = true;
 				break;
-			
 		}
 	}
 	
@@ -171,6 +171,7 @@ public class Player extends GameObj{
 				dirY = 0;
 				break;
 			case "Enemy":
+				System.out.println("Classe "+object.getName());
 				object.remove = true;
 				break;
 		}
