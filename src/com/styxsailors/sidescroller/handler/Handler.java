@@ -63,8 +63,7 @@ public class Handler {
 	
 	public void tick(){
 		if(global.input.restart.down){
-			player.x = player.initialX;
-			player.y = player.initialY;
+			restartGame();
 		}
 		updateEntities();
 	}
@@ -103,5 +102,8 @@ public class Handler {
 			return (object.x > global.camX - 128 && object.x + object.width < global.camX + 128 + global.GWIDTH * global.GSCALE );
 	}
 
+	public void restartGame(){
+		loadObjects();
+	}
 	
 }
