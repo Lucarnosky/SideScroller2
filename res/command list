@@ -1,0 +1,20 @@
+// COMMANDS LIST//
+
+/*SHOW COMMANDS*/
+show player bounds = print player x and y
+show player speed = print player movement speed
+show player jump = print player jump force
+show hitbox = show all game hitbox
+show cam = print cam coords
+show editor support = enable/disable support window
+
+/*SETTING CHANGERS*/
+set gravity [number] = change game gravity
+set scale [number] = change game scale
+set player speed [number] = change movements speed
+set player jump [number] = set player jump force, by default is gravity * 2 for let the camera works
+set camX = change the x of the camera
+set camY  = change the y of the camera
+
+/*UTILITY*/
+restart = restart the current level
